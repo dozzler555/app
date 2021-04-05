@@ -1,7 +1,7 @@
 image: Ubuntu
 
 install:
-- apt install git wget -y
+- sudo apt install git wget -y
 
 test_script:
 - wget https://raw.githubusercontent.com/Dazzler555/huiifzet/master/setup/android_build_env.sh
