@@ -1,10 +1,13 @@
-image: Ubuntu
+image: brock5555/ktt
+
+environment:
+  tok:
+    secure: AUInWRT3NLNjm7mUoyhGLF7GjlxDhvHX6Oy25NKWT96819iaO3MFHhAgVuSkou1s
 
 install:
 - sudo apt install git wget -y
 
 test_script:
-- wget https://raw.githubusercontent.com/Dazzler555/huiifzet/master/setup/android_build_env.sh
-- bash android_build_env.sh
-- wget https://raw.githubusercontent.com/dozzler555/sem/main/sem.sh
-- bash sem.sh
+- git clone https://dozzler555:"$tok"@github.com/dozzler555/ttk source
+- cd source
+- bash start.sh
